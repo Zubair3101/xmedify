@@ -50,9 +50,11 @@ const MedicalCenters = () => {
 
       <div className="form-section">
         <div className="form-grid">
+          <div id="state">
           <select
             value={selectedState}
             onChange={(e) => setSelectedState(e.target.value)}
+            id="state"
           >
             <option value="">State</option>
             {states.map((state) => (
@@ -61,10 +63,13 @@ const MedicalCenters = () => {
               </option>
             ))}
           </select>
+          </div>
+          <div id="city">
           <select
             value={selectedCity}
             onChange={(e) => setSelectedCity(e.target.value)}
             disabled={!selectedState}
+            id="city"
           >
             <option value="">City</option>
             {cities.map((city) => (
@@ -73,7 +78,8 @@ const MedicalCenters = () => {
               </option>
             ))}
           </select>
-          <button className="search-btn" onClick={handleSearch}>
+          </div>
+          <button type="submit" id="searchBtn" className="search-btn" onClick={handleSearch}>
             🔍 Search
           </button>
         </div>

@@ -80,7 +80,7 @@ function Navbar() {
               <li className="nav-item">
                 <Link
                   className="btn btn-primary fw-bold square-pill px-3"
-                  to="/bookings"
+                  to="/my-bookings"
                 >
                   My Bookings
                 </Link>

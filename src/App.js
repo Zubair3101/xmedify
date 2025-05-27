@@ -14,7 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/hospitals" element={<Hospitals />} />
-            <Route path="/bookings" element={<Bookings />}/>
+            <Route path="/my-bookings" element={<Bookings />}/>
           </Routes>
         </div>
         </SnackbarProvider>

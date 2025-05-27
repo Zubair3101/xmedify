@@ -36,9 +36,9 @@ const HospitalList = () => {
             </div>
           ) : (
             <>
-              <h2 style={{ fontSize: "22px", marginBottom: "25px" }}>
+              <h1 style={{ fontSize: "22px", marginBottom: "25px" }}>
                 {hospitals.length} medical centers available in {selectedCity}
-              </h2>
+              </h1>
               <p
                 style={{
                   fontSize: "14px",

@@ -13,7 +13,7 @@ const Search = ({ onSearch }) => {
   return (
     <div className="bookings-wrapper">
       <div className="bookings-header">
-        <h2>My Bookings</h2>
+        <h1>My Bookings</h1>
       </div>
 
       <div className="bookings-form-card">

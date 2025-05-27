@@ -1,0 +1,26 @@
+.promo-wrapper {
+  padding: 100px 85px;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(231, 240, 255, 1) !important;
+}
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* 1 column for text, 2 for image */
+  gap: 30px;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.promo-text {
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.promo-text h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2c4b;
+  margin: 0;
+}

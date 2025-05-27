@@ -1,0 +1,23 @@
+.banner-slider-wrapper {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+  margin-bottom: 30px;
+  padding: 0 85px; 
+  position: relative;
+}
+
+.banner-image {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Move pagination below the slides */
+.swiper-pagination {
+  position: relative !important; /* override Swiper's default absolute positioning */
+  margin-top: 20px;
+  text-align: center;
+}
+

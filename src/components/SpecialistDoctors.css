@@ -1,0 +1,91 @@
+.specialist-wrapper {
+  width: 100%;
+  overflow: visible;
+  position: relative;
+  padding: 0 5vw;
+}
+
+.specialist-section {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.specialist-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0b2c68;
+  margin-bottom: 3rem;
+}
+
+.specialist-swiper {
+  overflow: visible !important;
+  padding-bottom: 3rem;
+  overflow: visible;
+}
+
+.swiper-slide {
+  overflow: visible !important;
+  display: flex;
+  justify-content: center;
+}
+
+.doctor-card {
+  width: 100%;
+  margin: auto;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+.doctor-img-wrapper {
+  background: linear-gradient(to bottom right, #a0d8ff, #009ffd);
+  border-radius: 50% 50% 0 0;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.doctor-img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+}
+
+.doctor-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0b2c68;
+  margin-top: 1.5rem;
+}
+
+.doctor-specialty {
+  color: #2eafff;
+  font-weight: 500;
+  margin-top: 0.25rem;
+  font-size: 1.3rem;
+}
+
+/* Swiper pagination dots as circles */
+.swiper-pagination {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.swiper-pagination-bullets {
+  bottom: -30px !important;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background: #2b6cb0;
+  opacity: 0.4;
+  margin: 0 5px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}

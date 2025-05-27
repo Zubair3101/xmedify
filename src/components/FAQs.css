@@ -1,0 +1,110 @@
+.header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: flex-start;
+  gap: 30px;
+  max-width: 1500px;
+  margin: 30px auto;
+  padding: 0 85px;
+  align-items: start;
+  font-family: 'Poppins', sans-serif;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  overflow: visible;
+}
+
+.main-img {
+  width: 100%;
+  height: 550px;
+  border-radius: 12px;
+  border: 5px solid white;
+  display: block;
+  max-width: 600px;
+}
+
+.heart-icon {
+  position: absolute;
+  right: -10px;
+  top: 32%;
+  width: 120px;
+  height: 120px;
+}
+
+.faq-subtitle {
+  color: #2ca8f6;
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.faq-title {
+  font-size: 3.3rem;
+  font-weight: 650;
+  margin-bottom: 30px;
+  color: #1e3a8a;
+}
+
+.accordion.custom-accordion {
+  width: 500px; /* Control the width */
+  margin: auto; /* Center inside right section */
+}
+
+.accordion-button {
+    margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #1e3a8a;
+  background-color: transparent;
+  box-shadow: none;
+  position: relative;
+  padding-right: 3rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #eaf6ff;
+  color: #2ca8f6;
+}
+
+.accordion-button::after {
+  display: none; /* Hide Bootstrap default arrow */
+}
+
+.icon-toggle {
+  position: absolute;
+  right: 1.2rem;
+  font-size: 1.3rem;
+}
+
+.icon-toggle .plus,
+.icon-toggle .minus {
+  display: none;
+}
+
+.accordion-button.collapsed .plus {
+  display: inline;
+}
+
+.accordion-button:not(.collapsed) .minus {
+  display: inline;
+}
+
+.accordion-body {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Center accordion vertically next to image */
+.faq-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+}

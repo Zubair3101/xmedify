@@ -1,0 +1,146 @@
+.medical-center-container-fluid {
+  background-color: #eaf3ff;  /* Restore background */
+  max-width: 100%;
+  padding: 30px 85px 0 85px;
+  height: 600px;
+}
+
+.intro-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.text-content h3 {
+  color: #1d2c4b;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.bold-text {
+  font-weight: 800;
+  color: black;
+  font-size: 3.7rem;
+}
+
+.blue-text {
+  font-weight: 800;
+  color: #2ca8f6;
+  font-size: 3.7rem;
+}
+
+.text-content p {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: #555;
+  max-width: 600px;
+}
+
+.find-centers-btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #2ca8f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.image-content img {
+    padding-left: 100px;
+  max-width: 100%;
+  height: auto;
+}
+
+.form-section {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 100%;
+  margin: -80px auto 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-grid select,
+.search-btn {
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.form-grid select {
+    color: black;
+}
+
+.search-btn {
+  background-color: #2ca8f6;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.suggestion-title {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  color: #1d2c4b;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-items: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+
+.option-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fbff;
+  border-radius: 15px;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.option-box img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 0.5rem;
+}
+
+.option-box p {
+  color: lightgrey;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.option-box.active {
+  background-color: #eaf6ff;
+  border: 1px solid #2ca8f6;
+}
+
+.option-box.active p {
+  color: #2ca8f6;
+  font-weight: bold;
+}

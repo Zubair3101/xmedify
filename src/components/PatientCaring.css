@@ -1,0 +1,135 @@
+.consultation-section-wrapper {
+  background-color: #edf3fd;
+  padding: 0px 0;
+}
+
+.consultation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.consultation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.image-section {
+  width: 100%;
+  height: 100%;
+}
+
+.consultation-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-group {
+  margin-bottom: 20px;
+}
+
+.free-consultation {
+  font-size: 32px;
+  color: #2d8cf0;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.consultation-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.divider-line {
+  width: 60px;
+  height: 3px;
+  background-color: #2d8cf0;
+  margin-bottom: 20px;
+}
+
+.bold-text {
+  font-weight: 700;
+  color: #0b2c68;
+  font-size: 3.3rem;
+}
+
+.blue-text {
+  font-weight: 700;
+  color: #2ca8f6;
+  font-size: 3.3rem;
+}
+
+.helping-patients {
+    font-weight: 700;
+  font-size: 16px;
+  color: #2eafff;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+.patient-caring {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.care-description {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-item {
+    font-weight: 600;
+    color: #0b2c68;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.tick-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .consultation-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .free-consultation {
+    font-size: 28px;
+  }
+  
+  .patient-caring {
+    font-size: 24px;
+  }
+  
+  .content-section {
+    order: -1;
+    margin-bottom: 30px;
+  }
+}

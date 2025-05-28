@@ -37,7 +37,7 @@ const HospitalList = () => {
           ) : (
             <>
               <h1 style={{ fontSize: "22px", marginBottom: "25px" }}>
-                {hospitals.length} medical centers available in {selectedCity}
+                {hospitals.length} medical centers available in {selectedCity.toLowerCase()}
               </h1>
               <p
                 style={{

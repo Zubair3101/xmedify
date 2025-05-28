@@ -158,7 +158,7 @@ const BookingCalendar = ({ hospital }) => {
                   padding: "5px 0",
                 }}
               >
-                <div>{day.displayLabel}</div>
+                <div><p style={{marginBottom: "0px"}}>{day.displayLabel}</p></div>
                 <div style={{ fontSize: "13px", color: "#22c55e" }}>
                   10 Slots Available
                 </div>

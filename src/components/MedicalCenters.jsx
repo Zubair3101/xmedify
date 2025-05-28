@@ -50,7 +50,7 @@ const MedicalCenters = () => {
 
       <div className="form-section">
         <div className="form-grid">
-          <div>
+          <div id="state">
             <select
               id="state"
               value={selectedState}
@@ -64,7 +64,7 @@ const MedicalCenters = () => {
               ))}
             </select>
           </div>
-          <div>
+          <div id="city">
             <select
               value={selectedCity}
               onChange={(e) => setSelectedCity(e.target.value)}

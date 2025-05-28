@@ -54,6 +54,7 @@ const MedicalForm = () => {
         {/* Search Button */}
         <button 
           id="searchBtn"
+          type="submit"
           className="search-bttn" 
           onClick={fetchHospitals}
           disabled={!selectedState || !selectedCity || isLoading}

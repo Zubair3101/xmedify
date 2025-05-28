@@ -5,17 +5,32 @@ import { useSnackbar } from "notistack";
 const getNext7Days = () => {
   const days = [];
   const today = new Date();
+  today.setHours(0, 0, 0, 0); // Normalize today's date
+
   for (let i = 0; i < 7; i++) {
     const date = new Date(today);
     date.setDate(today.getDate() + i);
-    const label = date.toLocaleDateString("en-US", {
-      weekday: "short",
-      day: "2-digit",
-      month: "short",
-    });
+
+    // Calculate days difference
+    const diffInDays = Math.floor((date - today) / (1000 * 60 * 60 * 24));
+
+    let displayLabel;
+    if (diffInDays === 0) {
+      displayLabel = "Today";
+    } else if (diffInDays === 1) {
+      displayLabel = "Tomorrow";
+    } else {
+      displayLabel = date.toLocaleDateString("en-US", {
+        weekday: "short",
+        day: "2-digit",
+        month: "short",
+      });
+    }
+
     days.push({
-      label,
-      date: date.toISOString().split('T')[0] // Store date in YYYY-MM-DD format
+      label: date.toISOString().split('T')[0], // Keep ISO format for internal use
+      displayLabel, // This will show "Today", "Tomorrow", or formatted date
+      date: date.toISOString().split('T')[0]
     });
   }
   return days;
@@ -52,7 +67,7 @@ const BookingCalendar = ({ hospital }) => {
     setSelectedSlot({
       period,
       time: slot,
-      date: days[activeIndex].label,
+      date: days[activeIndex].displayLabel,
       dateValue: days[activeIndex].date
     });
     setShowForm(true);
@@ -143,7 +158,7 @@ const BookingCalendar = ({ hospital }) => {
                   padding: "5px 0",
                 }}
               >
-                <div>{day.label}</div>
+                <div>{day.displayLabel}</div>
                 <div style={{ fontSize: "13px", color: "#22c55e" }}>
                   10 Slots Available
                 </div>

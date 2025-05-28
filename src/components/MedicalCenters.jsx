@@ -59,7 +59,7 @@ const MedicalCenters = () => {
               <option value="">State</option>
               {states.map((state) => (
                 <option key={state} value={state}>
-                  {state}
+                  <li>{state}</li>
                 </option>
               ))}
             </select>
@@ -74,7 +74,7 @@ const MedicalCenters = () => {
               <option value="">City</option>
               {cities.map((city) => (
                 <option key={city} value={city}>
-                  {city}
+                  <li>{city}</li>
                 </option>
               ))}
             </select>

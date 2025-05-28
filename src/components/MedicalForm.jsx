@@ -28,7 +28,7 @@ const MedicalForm = () => {
             <option value="">Select State</option>
             {states.map((state) => (
               <option key={state} value={state}>
-                {state}
+                <li>{state}</li>
               </option>
             ))}
           </select>
@@ -45,7 +45,7 @@ const MedicalForm = () => {
             <option value="">Select City</option>
             {cities.map((city) => (
               <option key={city} value={city}>
-                {city}
+                <li>{city}</li>
               </option>
             ))}
           </select>

@@ -171,7 +171,7 @@ const BookingCalendar = ({ hospital }) => {
       {Object.entries(timeSlots).map(([period, slots], i) => (
         <div key={period} style={{ marginBottom: "18px" }}>
           <div style={{ display: "flex", alignItems: "flex-start", gap: "20px" }}>
-            <div style={{ width: "90px", fontWeight: "500" }}>{period}</div>
+            <p style={{ width: "90px", fontWeight: "500" }}>{period}</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
               {slots.map((slot) => (
                 <button

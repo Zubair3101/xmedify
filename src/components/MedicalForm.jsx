@@ -12,16 +12,14 @@ const MedicalForm = () => {
     selectedCity,
     setSelectedCity,
     fetchHospitals,
-    isLoading,
-    hasSearched,
-    resetSearch
+    isLoading
   } = useContext(MedicalContext);
 
   return (
     <div className="search-wrapper container-fluid">
       <div className="search-box">
         {/* State Dropdown */}
-        <div className="form-control">
+        <div id="state" className="form-control">
           <FaSearch className="icon" />
           <select
             value={selectedState}
@@ -37,7 +35,7 @@ const MedicalForm = () => {
         </div>
 
         {/* City Dropdown */}
-        <div className="form-control">
+        <div id="city" className="form-control">
           <FaSearch className="icon" />
           <select
             value={selectedCity}
@@ -55,6 +53,7 @@ const MedicalForm = () => {
 
         {/* Search Button */}
         <button 
+          id="searchBtn"
           className="search-bttn" 
           onClick={fetchHospitals}
           disabled={!selectedState || !selectedCity || isLoading}

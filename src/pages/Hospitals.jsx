@@ -18,7 +18,7 @@ function Hospitals() {
     if (!location.state?.fromHomepage && !hasSearched) {
       resetSearch();
     }
-  }, [location.key]);
+  }, [location.kesy]);
 
   return (
     <div>

@@ -19,7 +19,7 @@ const MedicalForm = () => {
     <div className="search-wrapper container-fluid">
       <div className="search-box">
         {/* State Dropdown */}
-        <div className="form-control">
+        <div id="state" className="form-control">
           <FaSearch className="icon" />
           <select
             id="state"
@@ -36,7 +36,7 @@ const MedicalForm = () => {
         </div>
 
         {/* City Dropdown */}
-        <div className="form-control">
+        <div id="city" className="form-control">
           <FaSearch className="icon" />
           <select
             id="city"

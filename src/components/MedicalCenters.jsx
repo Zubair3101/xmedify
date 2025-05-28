@@ -50,21 +50,21 @@ const MedicalCenters = () => {
 
       <div className="form-section">
         <div className="form-grid">
-          <div id="state">
+          <div>
             <select
+              id="state"
               value={selectedState}
               onChange={(e) => setSelectedState(e.target.value)}
-              id="state"
             >
               <option value="">State</option>
               {states.map((state) => (
                 <option key={state} value={state}>
-                  <li>{state}</li>
+                  {state}
                 </option>
               ))}
             </select>
           </div>
-          <div id="city">
+          <div>
             <select
               value={selectedCity}
               onChange={(e) => setSelectedCity(e.target.value)}
@@ -74,7 +74,7 @@ const MedicalCenters = () => {
               <option value="">City</option>
               {cities.map((city) => (
                 <option key={city} value={city}>
-                  <li>{city}</li>
+                  {city}
                 </option>
               ))}
             </select>

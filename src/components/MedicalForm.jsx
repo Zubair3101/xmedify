@@ -19,25 +19,27 @@ const MedicalForm = () => {
     <div className="search-wrapper container-fluid">
       <div className="search-box">
         {/* State Dropdown */}
-        <div id="state" className="form-control">
+        <div className="form-control">
           <FaSearch className="icon" />
           <select
+            id="state"
             value={selectedState}
             onChange={(e) => setSelectedState(e.target.value)}
           >
             <option value="">Select State</option>
             {states.map((state) => (
               <option key={state} value={state}>
-                <li>{state}</li>
+                {state}
               </option>
             ))}
           </select>
         </div>
 
         {/* City Dropdown */}
-        <div id="city" className="form-control">
+        <div className="form-control">
           <FaSearch className="icon" />
           <select
+            id="city"
             value={selectedCity}
             onChange={(e) => setSelectedCity(e.target.value)}
             disabled={!selectedState}
@@ -45,7 +47,7 @@ const MedicalForm = () => {
             <option value="">Select City</option>
             {cities.map((city) => (
               <option key={city} value={city}>
-                <li>{city}</li>
+                {city}
               </option>
             ))}
           </select>
